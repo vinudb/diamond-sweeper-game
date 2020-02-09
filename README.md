@@ -1,4 +1,4 @@
-# LIVE URL : https://casaone-rule-manager.herokuapp.com/
+# LIVE URL : https://diamond-sweeper-vinay.herokuapp.com/
 
 # To view the output in the development mode, follow the steps as given below:
 1) In the console, navigate to the project folder.
@@ -16,7 +16,7 @@
 - All array operations are performed in '/src/utils.js' file and are named exported
 - Have selected dark theme for better look and comfort
 
-#Features
+# Features
 - The game board has 8x8 squares (initially, all represented by question marks)
 - There are 8 diamonds hidden on the board, each diamond behind one of the squares
 - When the user clicks on a square, if the square was hiding a diamond, the diamond appears Otherwise, the square is opened, and blank
@@ -28,4 +28,3 @@
 - User can click on reset button to reset and restart the game
 # NOTE: 
 - This project could have also been done using redux or usual state/setState/props methods. I have good understanding of both the concepts.
--  
