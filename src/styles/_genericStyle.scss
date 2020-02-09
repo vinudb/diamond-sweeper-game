@@ -1,0 +1,102 @@
+h1, h2, h3{
+    margin: 2px;
+}
+
+.table-container{
+    margin: 10px;
+    padding: 10px;
+    background: $grey;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    @media (min-width: $desktop-breakpoint) {
+        width: 35vw;
+    }
+}
+
+.cell{
+    margin: 1px;
+    flex: 1;
+    height: calc(80vw/ 8);
+    background-repeat: no-repeat!important;
+    background-size: 80%!important;
+    background-position: center!important;
+    border-radius: 10%;
+    border: 1px solid black;
+    @media (min-width: $desktop-breakpoint) {
+        height: calc(35vw/ 8);
+    }
+}
+
+.unknown{
+    background: url('../assets/question.png');
+    border-color: gray;
+}
+
+.diamond{
+    background: url('../assets/diamond.png');
+    border-color: green; 
+}
+
+.arrowRight{
+    background: url('../assets/arrow.png');
+    border-color: orange;
+}
+
+.arrowLeft{
+    @extend .arrowRight;
+    transform: rotate(180deg)
+}
+
+.arrowTop{
+    @extend .arrowRight;
+    transform: rotate(270deg)
+}
+
+.arrowBottom{
+    @extend .arrowRight;
+    transform: rotate(90deg)
+}
+
+.blank{
+    background-color: gray;
+    border-color: red;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $desktop-breakpoint) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 0.6rem;
+    max-width: 80rem; 
+    @media (min-width: 45rem) {
+          padding: 1.5rem 5rem;
+    }
+}
+
+.app-container{
+    background-color: darkslategray;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.title{
+    text-align: center;
+    color: $dark-grey;
+}
